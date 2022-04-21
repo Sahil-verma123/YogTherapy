@@ -505,7 +505,7 @@
 .section-3 {
   height: 100vh;
   width: 100%;
-  background-color: #222;
+  background-color: #333;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -631,10 +631,124 @@
   background-color: #5f0303;
 }
 
+.section-4 {
+  height: 100vh;
+  width: 100%;
+  background-color: #222;
+  padding: 7rem;
+}
+
+.section-4 .about-heading {
+  font-size: 6rem;
+  font-weight: 900;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #eee;
+  margin-top: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+  text-shadow: 0.3rem 0.3rem 0.3rem #000;
+}
+
+.section-4 .about-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section-4 .about-wrapper .store-info {
+  height: 100%;
+  width: 70%;
+  background: -webkit-gradient(linear, left top, right top, from(#222), to(#333));
+  background: linear-gradient(to right, #222, #333);
+  text-align: center;
+  margin: 2rem 1rem;
+  border-radius: 3rem;
+  -webkit-box-shadow: 1rem 1rem 1.5rem #000;
+          box-shadow: 1rem 1rem 1.5rem #000;
+  padding: 0 3rem;
+}
+
+.section-4 .about-wrapper .store-info .store-name {
+  font-size: 3rem;
+  letter-spacing: 0.3rem;
+  word-spacing: 1rem;
+  text-transform: capitalize;
+  color: #fff;
+  margin-top: 1rem;
+  font-family: sans-serif;
+}
+
+.section-4 .about-wrapper .store-info .store-para {
+  color: #eee;
+  font-size: 2rem;
+  padding: 1.5rem 0;
+  text-align: left;
+}
+
+.section-4 .about-wrapper .author-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  width: 70%;
+  margin-top: 3rem;
+}
+
+.section-4 .about-wrapper .author-info .author-img {
+  width: 368px;
+  height: 230px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 1rem 2rem;
+  border-radius: 1.5rem;
+}
+
+.section-4 .about-wrapper .author-info .author-bio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.section-4 .about-wrapper .author-info .author-bio .author-name {
+  color: #eee;
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 2rem 0;
+  text-shadow: 0.3rem 0.3rem 0.6rem #000;
+  letter-spacing: 0.2rem;
+  word-spacing: 0.5rem;
+}
+
+.section-4 .about-wrapper .author-info .author-bio .author-para {
+  font-size: 2rem;
+  font-family: sans-serif;
+  text-shadow: 0.2rem 0.2rem 0.4rem #000;
+  color: #fff;
+}
+
 .footer {
   width: 100%;
   height: 12rem;
-  background-color: #333;
+  background-color: #222;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -737,6 +851,15 @@
     margin-bottom: 1rem;
     font-size: 1.5rem;
   }
+  .section-4 {
+    height: auto;
+  }
+  .section-4 .about-wrapper .store-info {
+    width: 100%;
+  }
+  .section-4 .about-wrapper .author-info {
+    width: 100%;
+  }
   .footer {
     height: 8rem;
   }
@@ -771,6 +894,12 @@
   .section-2 .gallery .gallery-link .therapy-img {
     width: 300px;
     height: 200px;
+  }
+  .section-4 {
+    height: auto;
+  }
+  .section-4 .about-heading {
+    font-size: 5rem;
   }
 }
 
@@ -854,6 +983,29 @@
     width: 22rem;
     height: 5rem;
   }
+  .section-4 .about-wrapper .store-info .store-name {
+    font-size: 2.5rem;
+  }
+  .section-4 .about-wrapper .store-info .store-para {
+    font-size: 1.7rem;
+  }
+  .section-4 .about-wrapper .author-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .section-4 .about-wrapper .author-info .author-img {
+    margin: 1rem 0;
+    width: 300px;
+    height: 184px;
+  }
+  .section-4 .about-wrapper .author-info .author-bio .author-name {
+    font-size: 2.5rem;
+  }
+  .section-4 .about-wrapper .author-info .author-bio .author-para {
+    font-size: 1.7rem;
+  }
   .footer {
     height: 8rem;
     display: -webkit-box;
@@ -873,6 +1025,9 @@
 }
 
 @media (max-width: 560px) {
+  .section-4 {
+    padding: 5rem 3rem;
+  }
   .footer {
     padding: 0;
   }
@@ -918,7 +1073,32 @@
   }
   .section-3 .contact-wrapper .contact-details div h3 {
     margin-top: 2rem;
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
+  }
+  .section-4 {
+    padding: 5rem 2rem;
+  }
+  .section-4 .about-heading {
+    font-size: 4rem;
+  }
+  .section-4 .about-wrapper .store-info .store-name {
+    font-size: 2rem;
+  }
+  .section-4 .about-wrapper .store-info .store-para {
+    font-size: 1.5rem;
+  }
+  .section-4 .about-wrapper .author-info .author-bio .author-name {
+    font-size: 2rem;
+  }
+  .section-4 .about-wrapper .author-info .author-bio .author-para {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 345px) {
+  .section-4 .about-wrapper .author-info .author-img {
+    width: 270px;
+    height: 164px;
   }
 }
 
